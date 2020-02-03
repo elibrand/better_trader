@@ -1,0 +1,135 @@
+* {
+	color: white;
+	line-height: 1.6 !important;
+}
+h1 {
+	font-size: 2.7rem !important;
+}
+h2 {
+	font-size: 2.3rem !important;
+}
+h6 {
+	font-size: 0.8rem !important;
+	color: #A4A4A4 !important;
+}
+body {
+	background-color: black !important;
+}
+nav {
+	z-index: 500;
+	position: fixed;
+	background-color: #1C1C1C;
+	border-top: 2px #0431B4 solid;
+	border-bottom: 2px #0431B4 solid;
+}
+nav img {
+	width: 160px;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none !important;
+}
+.middle {
+	margin-right: 380px !important;
+	margin-left: 380px !important;
+}
+.right {
+	display: flex;
+	justify-content: right;
+}
+.nav-link {
+	font-size: 14px;
+	color: white;
+}
+.nav-btn {
+	margin: 8px !important;
+	font-size: 12px;
+}
+
+header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.9)), url('pics/working.jpg');
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+}
+header .row {
+	width: 45%;
+}
+header h1 {
+	margin-top: 120px;
+}
+header h4 {
+	margin-bottom: 140px;
+}
+
+#stats .row {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+#stats hr {
+	border-top: 1px white solid;
+}
+
+#content .row {
+	margin-top: 20px;
+}
+
+.card {
+	background-color: #424242 !important;
+}
+.card-body {
+	text-align: center !important;
+}
+.sticky-card {
+	position: sticky !important;
+	position: -webkit-sticky !important;
+	top: 95px;
+}
+.sticky-card a {
+	color: white;
+	background-color: #04B404;
+	padding: 12px;
+}
+#about h2 {
+	margin-top: 40px;
+}
+#about p {
+	color: #BDBDBD !important;
+	font-size: 20px;
+}
+#about li {
+	color: #BDBDBD !important;
+	font-size: 20px;
+	list-style-type: square;
+}
+#about a {
+	color: blue !important;
+}
+#about a:hover {
+	color: white !important;
+}
+#about img {
+	width: 100%;
+	border: 1px #BDBDBD solid;
+}
+#info p {
+	color: #A4A4A4 !important;
+	/*font-size: 20px;*/
+}
+ul {
+	list-style-position: inside;
+  	padding-left: 0;
+}
+#box {
+	background-color: #424242; padding: 20px;
+	text-align: center !important;
+}
+#box a {
+	color: white !important;
+	font-size: 20px;
+}
+#box a:hover {
+	color: blue !important;
+}
