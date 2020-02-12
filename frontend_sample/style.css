@@ -16,6 +16,7 @@ body {
 	background-color: black !important;
 }
 nav {
+	height: 60px;
 	z-index: 500;
 	position: fixed;
 	background-color: #1C1C1C;
@@ -24,6 +25,8 @@ nav {
 }
 nav img {
 	width: 160px;
+	margin-top: 20px;
+	position: fixed;
 }
 a {
 	text-decoration: none;
@@ -32,36 +35,47 @@ a:hover {
 	text-decoration: none !important;
 }
 .middle {
-	margin-right: 380px !important;
-	margin-left: 380px !important;
+	justify-content: center;
 }
 .right {
-	display: flex;
-	justify-content: right;
+	text-align: right;
 }
 .nav-link {
+	height: 35px;
 	font-size: 14px;
 	color: white;
+	margin-top: 8px;
 }
 .nav-btn {
 	margin: 8px !important;
 	font-size: 12px;
 }
+.nav-link:hover {
+	color: white;
+}
 
 header {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.9)), url('pics/working.jpg');
   	background-repeat: no-repeat;
-  	background-attachment: fixed;
-  	background-size: cover;
+  	background-attachment: static;
+  	background-size: 100% auto;
 }
 header .row {
-	width: 45%;
+	width: 70%;
 }
 header h1 {
 	margin-top: 120px;
 }
 header h4 {
 	margin-bottom: 140px;
+}
+
+#info-small {
+	margin: 0 15px 0 15px;
+	padding: 30px
+}
+#info-small p {
+	color: #2E2E2E;
 }
 
 #stats .row {
@@ -86,6 +100,7 @@ header h4 {
 	position: sticky !important;
 	position: -webkit-sticky !important;
 	top: 95px;
+	margin-bottom: 220px;
 }
 .sticky-card a {
 	color: white;
@@ -125,6 +140,7 @@ ul {
 #box {
 	background-color: #424242; padding: 20px;
 	text-align: center !important;
+	margin-bottom: 140px;
 }
 #box a {
 	color: white !important;
@@ -132,4 +148,124 @@ ul {
 }
 #box a:hover {
 	color: blue !important;
+}
+#arrow {
+	color: white; 
+	background-color: #424242;
+	margin: 35px 0 0 240px;
+	padding: 20px;
+	position: sticky !important;
+	position: -webkit-sticky !important;
+	top: 90%;
+}
+#studies {
+	background-color: white;
+	padding-top: 10px;
+	padding-bottom: 90px;
+}
+#studies .card {
+	width: 21rem;
+	margin: 8px;
+}
+#studies h2 {
+	color: #2E2E2E;
+	margin-top: 140px;
+	text-align: center;
+}
+#studies a {
+	margin-bottom: 10px;
+}
+#quote {
+	margin-top: 90px;
+	margin-bottom: 90px;
+	padding-left: 500px;
+	padding-right: 500px;
+}
+#quote h2 {
+	color: #04B404;
+	text-align: center;
+}
+#quote h6 {
+	color: white;
+	font-size: 20px !important;
+}
+#quote p {
+	color: #424242;
+	font-size: 20px;
+	text-align: right;
+}
+#footer {
+	padding-top: 90px;
+	padding-bottom: 90px;
+	background-color: #424242;
+	text-align: center;
+}
+#footer h2 {
+	color: #04B404;
+}
+#footer img {
+	height: 30px;
+	margin: 20px;
+	filter: grayscale(100%);
+}
+#menu {
+	background-color: #181818;
+	padding-top: 90px;
+}
+#menu h5 {
+	color: #04B404;
+}
+#menu ul {
+	margin: 20px;
+	list-style: none;
+}
+#menu li {
+	color: #424242;
+}
+#menu li:before {
+	content: '\2794 \0020';
+	color: red;
+}
+#apps {
+	justify-content: center;
+}
+#apps img {
+	margin: 20px;
+}
+#apps p {
+	margin-left: 200px;
+	margin-right: 200px;
+	color: #424242;
+}
+
+@media only screen and (max-width: 770px) {
+	#blog-btn {
+		display: none;
+	}
+	#info {
+		display: none;
+	}
+	#info-small {
+		display: block !important;
+		background-color: white;
+	}
+	#stats {
+		display: none;
+	}
+	header .row {
+	width: 100%;
+	}
+}
+
+
+@media only screen and (max-width: 665px) {
+	#start-btn {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 570px) {
+	#talk-btn {
+		display: none;
+	}
 }

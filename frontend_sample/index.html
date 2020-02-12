@@ -2,41 +2,60 @@
 <html>
 <head>
 	<title>BetterTrader</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/7dec1adfb2.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
 	<nav class="container-fluid">
-		<div class="row middle">
-			<div class="col">
+		<div class="container">
+			<div class="row" style="flex-wrap: nowrap;">
 				<a href="#"><img src="pics/BetterTrader-logo-white.png"></a>
 			</div>
-			<div class="col right">
-				<a href="#" class="nav-link">BLOG</a>
-				<a href="#" class="nav-link">LOG IN</a>
-				<a href="#" class="nav-link nav-btn" style="background-color: #04B404;">START FOR FREE</a>
-				<a href="#" class="nav-link nav-btn" style="background-color: #0431B4;">TALK TO AN EXPERT</a>
+				<div class="row" style="flex-wrap: nowrap; justify-content: flex-end;">
+					<a href="#" id="blog-btn" class="nav-link">BLOG</a>
+					<a href="#" class="nav-link">LOG IN</a>
+					<a href="#" id="start-btn" class="nav-link nav-btn" style="background-color: #04B404;">START FOR FREE</a>
+					<a href="#" id="talk-btn" class="nav-link nav-btn" style="background-color: #0431B4;">TALK TO AN EXPERT</a>
+				</div>
 			</div>
 		</div>
 	</nav>
 	
-	<header class="container-fluid">
-		<div class="row middle">
-			<div class="col">
-				<h1>How to Prepare for Economic Events</h1>
-				<h4>Economic events occur every day and impact the many financial instruments you have in your portfolio. The most profitable time to enter the market to sell or buy the instrument typically ranges from 1 to 5 minutes after the release. How can traders react quickly to these releases and profit? Read this case study to find out.</h4>
+	<header id="top" class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1>How to Prepare for Economic Events</h1>
+					<h4>Economic events occur every day and impact the many financial instruments you have in your portfolio. The most profitable time to enter the market to sell or buy the instrument typically ranges from 1 to 5 minutes after the release. How can traders react quickly to these releases and profit? Read this case study to find out.</h4>
+				</div>
 			</div>
 		</div>
 	</header>
 
+
+
+
+	<div id="info-small" style="display: none;">
+		<p>About NY Empire State Manufacturing Index</p>
+		<p>An index derived from a survey of 200 manufacturers in New York state conducted by the Federal Reserve Bank of New York. It indicates the general business condition in New York state. A level above 0 indicates improving business outlooks whilst a level below 0 indicates worsening outlooks.</p>
+		<p>Type: Economic Event</p>
+		<p>Frequency of releases: Monthly</p>
+		<p>Location: NY, United States</p>
+		<p>Analysis tool: Trade Ideas, The BackTester</p>
+		<p>Instruments: USD/JPY, Gold</p>
+	</div>
+
+
 	<div id=stats class="container">
 		<div class="row">
-			<div class="col">
+			<div class="col-md-7">
 				<div class="row">
 					<h1>3</h1><p style="margin: auto auto auto 14px;">possible scenarios</p>
 				</div>
 			</div>
-			<div class="col right">
+			<div class="col-md-5">
 				<div class="row">
 					<h1>100%</h1><p style="margin: auto auto auto 14px;">increase in confidence in trading strategies</p>
 				</div>
@@ -127,7 +146,143 @@
 						<a href="#">GET STARTED FOR FREE</a>
 					</div>
 				</div>
+
+					<a href="#top"><i id="arrow" class="fas fa-long-arrow-alt-up" style="margin-bottom: 140px;"></i></a>
+
 			</div>
+		</div>
+	</div>
+	<div id="studies" class="container-fluid space">
+		<div class="container">
+			
+			<h2>Read More BetterTrader Case Studies</h2>
+			
+			<div class="row">
+				
+				<div class="card"">
+					<div class="card-body">
+						<h4 class="card-title">Unemployment Rate And Its Effect On The S&P 500: It's Less Intuitive Than You Think</h4>
+						<p class="card-text">Economic event releases are curveballs to unprepared and inexperienced traders, resulting in emotional...</p>
+						<button type="button" class="btn btn-light">Read more</button>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title">How Artificial Intelligence Helps You Understand Leading/Following Markets</h4>
+						<p class="card-text">Leading/Following Markets is a fundamental analysis tool that helps traders decide on the markets...</p>
+						<button type="button" class="btn btn-light">Read more</button>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title">How A Single Tweet Shook The Oil Markets</h4>
+						<p class="card-text">A single tweet often seems inconsequential - unless it comes from the President of the United States. President Trump sent out this tweet...</p>
+						<button type="button" class="btn btn-light">Read more</button>
+					</div>
+				</div>
+				<div class="row" style="margin: auto;">
+					<div class="col">
+						<button type="button" class="btn btn-outline-success" style="margin-top: 60px;">Back to case studies</button>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<div id="quote" class="container-fluid">
+		<h2>This is what our Pro Membership Clients say about us...</h2>
+		<i><h6>"The back tester definitely improved my trading skills."</h6>
+		<p>— Joushua M. [FX Trader]</p></i>
+	</div>
+
+	<div id="footer" class="container-fluid">
+		<div class="container">
+			<h2>BetterTrader is used extensively by professional traders as well as enthusiastic beginners.</h2>
+			<img src="pics/tradier-brokerage-logo.png">
+			<img src="pics/oanda-big.png">
+			<img src="pics/tradestation-logo.png">
+			<img src="pics/Optimus-logo.png">
+			<img src="pics/ctrader.png">
+			<img src="pics/yahoo3.png">
+			<img src="pics/ForexExpo.png">
+			<img src="pics/TradersExpo.png">
+			<img src="pics/FM-Finance-Magnates-news.png">
+		</div>
+	</div>
+
+	<div id="menu" class="container-fluid">
+		<div class="row" style="justify-content: center;">
+				<ul>
+					<h5>Our Products:</h5>
+					<li>Mobile Trading App</li>
+					<li>Open Forex Demo Account (free)</li>
+					<li>Features & Benefits</li>
+					<li>Community and Chat Room</li>
+					<li>The Backtester</li>
+					<li>Trading Squawk Box</li>
+					<li>Risk-ON/Risk-OFF Real-time Monitor</li>
+					<li>Pro Membership</li>
+				</ul>
+				<ul>
+					<h5>Useful Resources:</h5>
+					<li>Getting Started with Trading</li>
+					<li>Futures Symbols and Months</li>
+					<li>Technical Analysis 101</li>
+					<li>Futures Trading Knowledge Base</li>
+					<li>Articles for New Traders</li>
+					<li>Pro Traders Materials</li>
+					<li>The Essential Guide to Trading Economic Events</li>
+					<li>Join our FREE Webinars</li>
+					<li>Case Studies</li>
+					<li>Video Tutorials</li>
+				</ul>
+				<ul>
+					<h5>Partners:</h5>
+					<li>Our Partners</li>
+					<li>TradeStation</li>
+					<li>Oanda</li>
+					<li>Tradier</li>
+					<li>Be a partner</li>
+				</ul>
+				<ul>
+					<h5>Online Trading Academy:</h5>
+					<li>Recommended books</li>
+					<li>Trading Economic Events</li>
+					<li>Free Trading Seminar</li>
+					<li>Free Learning Session</li>
+					<li>The Traders Glossary</li>
+					<li>Presentations</li>
+					<li>Futures 101</li>
+					<li>Info Hub</li>
+					<li>eBooks</li>
+					<li>Sign up for Trading the News Webinar</li>
+				</ul>
+				<ul>
+					<h5>BetterTrader:</h5>
+					<li>Our Mission</li>
+					<li>About</li>
+					<li>Contact Us</li>
+					<li>Testimonials Reviews</li>
+					<li>Benefits of BetterTrader</li>
+					<li>Pricing</li>
+					<li>Careers</li><br><br>
+					<img src="pics/ssl-secured.svg">
+				</ul>
+		</div>
+		<div class="row">
+			<div class="col">
+				<h5 style="color: white; text-align: center;">Get the BetterTrader.co App!</h5>
+			</div>
+		</div>
+		<div id="apps" class="row">
+				<img src="pics/app-store.png">
+				<img src="pics/play-store.png">
+				<img src="pics/web-app.png">
+
+				<p>DISCLAIMER PERTAINING TO INVESTMENT ADVICE: Please note, BetterTrader is a technology company. Do not take the opinions expressed explicitly or implicitly in this communication as investment advice. The opinions expressed are our own and are based on statistical data analysis. Past performance does not guarantee future success. In addition, the assumptions and the historical data based on which an opinion is made could be faulty. All results and analyses expressed are hypothetical and are NOT guaranteed. All Trading involves substantial risks. Leverage Trading has large potential rewards but also large potential risks. If you are not an investment professional please consult one before risking capital.<br>
+				Statistically back-tested trading ideas are generated by BetterTrader's own proprietary artificial intelligence algorithms.<br><br><br>
+				Copyright © 2014-2019 BetterTrader.co</p>
 		</div>
 	</div>
 	
